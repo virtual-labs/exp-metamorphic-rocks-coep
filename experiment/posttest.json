@@ -2,38 +2,107 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Any given rock at some depth below the surface is subjected to pressure from how many sources?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation ",
+        "b": "Explanation : Any given rock at some depth below the surface is subjected to pressure from two sources: first, load of the overlying burden and second, from crustal movements",
+        "c": "Explanation ",
+        "d": "Explanation "
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
-    {
-      "question": "This is a Sample Question 2?",
+	 {
+      "question": "Water in which form is considered as single most important agent?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Solid",
+        "b": "Liquid",
+        "c": "Gaseous",
+        "d": "Solid and liquid"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation ",
+        "b": "Explanation ",
+        "c": "Explanation :Water in the form of steam is considered the single most important agent. The water may be present in the minerals as water of crystallization or simply as pore fluid or it may be supplied externally by magmatic bodies.",
+        "d": "Explanation "
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+	{
+      "question": "Which rocks show severe degree of metamorphism?",
+      "answers": {
+        "a": "Situated near the plate boundaries",
+        "b": "Situated inside the boundaries",
+        "c": "Situated at the centre of the plates",
+        "d": "Irrespective of the place, the degree is same everywhere"
+      },
+      "explanations": {
+        "a": "Explanation :Rocks situated near the plate boundaries or within the geosynclinal belts are especially prone to directed pressure and often show severest degree of metamorphic changes.",
+        "b": "Explanation ",
+        "c": "Explanation ",
+        "d": "Explanation "
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "The type of metamorphism in which heat factor has played an important role is",
+      "answers": {
+        "a": "Dynamic metamorphism",
+        "b": "Thermal metamorphism",
+        "c": "Thermodynamic metamorphism",
+        "d": "Barometric metamorphism"
+      },
+      "explanations": {
+        "a": "Explanation ",
+        "b": "Explanation :Thermal metamorphism is a general term including a variety of metamorphic processes in which the heat factor has played an important role.",
+        "c": "Explanation ",
+        "d": "Explanation "
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Type of metamorphism where part of country rock may get entrapped within magmatic body is ",
+      "answers": {
+        "a": "Contact metamorphism",
+        "b": "Pyrometamorphism",
+        "c": "Plutonic metamorphism",
+        "d": "Dyke metamorphism"
+      },
+      "explanations": {
+        "a": "Explanation ",
+        "b": "Explanation :Pyrometamorphism is a type of thermal metamorphism in which case a part of country rock may actually get entrapped within a magmatic body. The effects result due to intense localized heating.",
+        "c": "Explanation ",
+        "d": "Explanation "
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "In which metamorphism there is almost no or little new mineral is formed?",
+      "answers": {
+        "a": "Dynamic metamorphism",
+        "b": "Thermal metamorphism",
+        "c": "Thermodynamic metamorphism",
+        "d": "Barometric metamorphism"
+      },
+      "explanations": {
+        "a": "Explanation :In the dynamic metamorphism, there is no or very little formation of new minerals. These are the original textures and structures of the rocks that are partially or totally obliterated.",
+        "b": "Explanation ",
+        "c": "Explanation ",
+        "d": "Explanation "
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
     }
+    
   ]
 }
