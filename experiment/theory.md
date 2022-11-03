@@ -41,5 +41,5 @@ In areas where stresses caused by earth movements such as folding and faulting, 
  The rock ‘hornfels’, is an example produced by contact metamorphism. Rocks formed by contact or thermal metamorphism are fine-grained and show no foliation. 
 The metamorphic aureole or the zone surrounding the igneous intrusion is a small area that is heated by the igneous intrusion. Therefore metamorphism occurs in the area adjacent or in contact with this intrusion. Temperature is dominant and Pressure is low.  Beyond this zone of contact, the rocks are not metamorphosed.  In contact metamorphism the temperature increases in all directions, directed towards the magma intrusion but shows variations in temperature between the deeper surrounding rocks and the magma intrusion. The metamorphism that is brought about by temperature alone is called as ‘thermal’ metamorphism. In rocks such as limestone thermal metamorphism causes melting of crystal of calcite. During recrystallization of this melt a new rock i.e. marble is formed. 
 		Limestone	Thermal  metamorphism Marble 
-contactMeta
-![contactMeta*******************************************************************************](images/contactMeta.jpg)
+<br><br>
+![contactMeta*******************************************************************************](images/contactMeta.JPG)
