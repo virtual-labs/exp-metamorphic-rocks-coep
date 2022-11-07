@@ -1,1 +1,3 @@
-#### Identification of metamorphic rocks
+#### To Identify Megascopically the Metamorphic rocks where Occurrence of peculiar alignment of minerals (lineation, foliation) etc are prominently seen.
+
+#### Metamorphism can result in complex structures and rare minerals that make these some of the most bazaar looking and strikingly beautiful of all crustal rocks, but to geologists the real beauty of metamorphic rocks is the information they contain about tectonic processes and Earth history. They are valuable, because metamorphic minerals and rocks have economic value. For example, slate and marble are building materials, garnets are used as gemstones and abrasives, talc is used in cosmetics, paints, and lubricants, and asbestos is used for insulation and fireproofing.
