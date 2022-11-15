@@ -2,6 +2,9 @@
 Metamorphism is defined as the changes that take place in the rocks due to pronounced changes in temperature, pressure and chemical environment. The 
 rocks, which are formed by this process, are called as ‘metamorphic rocks’. The term “Metamorphism" is derived from the Greek:  Meta -meaning change (due to Pressure and Temperature), Morph meaning form (structure). The original rock which changes its form because it has undergone metamorphism is known as protolith. Sedimentary and igneous rocks are Protoliths that undergo metamorphism.
 The changes in the protoliths are due to pressures and temperatures it is subjected to. The mineral composition of the original rock may completely change resulting in new textures which are completely different from those under which the original rock formed.
+
+You can find the rocks and its properties file in references which is developed by Dr. Sandeep A. Meshram, Associate Professor in Geology, COEP Technological University, Pune
+
 ### Agents of Metamorphism :	
 ##### Important agents of metamorphism are:
 - Temperature
