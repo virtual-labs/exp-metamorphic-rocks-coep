@@ -1,5 +1,5 @@
 var i=1;
-var maxIndexArr=5;
+var maxIndexArr=26;
 var mineralCount=1;
 let  SampleRandomArr = [];
 var attemptCount=0;
