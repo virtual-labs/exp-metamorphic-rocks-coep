@@ -2,6 +2,7 @@ var i=1;
 var maxIndexArr=5;
 var mineralCount=1;
 let  SampleRandomArr = [];
+var attemptCount=0;
 function randomIntFromInterval(){ 
 	do {
 	  	let num = Math.floor(Math.random() * 26 + 1);
@@ -19,12 +20,12 @@ function randomIntFromIntervalPos(min, max) {
 }
 
 randomIntFromInterval();
-console.log(tempMasterJson);
+
 var htm='<div class="row">'
 			+'<div class="col-sm-1">'
 			+'</div>'
 			+'<div class="col-sm-2">'
-			+'<strong><span style="float:right;">Select metamorphic rocks</span></strong>'
+			+'<strong><center><span>Select metamorphic rocks</span></center></strong>'
 			+'</div>'
 			+'<div class="col-sm-7">'
 			+'<select class="custom-select" id="mineral"  >'
@@ -66,11 +67,8 @@ var thoery='<div class="container col-sm-12"  id="theory">'
 	+'<ul>'
 	+'<li>Form '
 	+'<li>Colour '
-	+'<li>Streak '
-	+'<li>Luster '
 	+'<li>Fracture '
 	+'<li>Cleavage '
-	+'<li>Hardness '
 	+'<li>Specific Gravity (Density) '
 	+'<li>Degree of Transparency '
 	+'<li>Special Properties'
@@ -114,14 +112,14 @@ function mineralSelect(){
 				 var text='<div class="col-lg-2  col-sm-12">'
 					 	+'</div>'
 					 	+'<div class="container col-lg-4 col-sm-12 imgLens">'
-					 	+'<img id="myimage"  class="img-fluid myImage" src="'+tempMasterJson.demo[i].src+'" width="500" height="300" ><br>'
+					 	+'<img id="myimage"  class="img-fluid myImage" style="background-repeat: no-repeat;" src="'+tempMasterJson.demo[i].src+'" width="500" height="300" ><br>'
 					 	+'<br>'
 					 	+'<br>'
 					 	+'<div class="row" id="previewPanel" >'
 					 	previewPanel();
 					 	text+='</div>'
 						+'<br>'
-					 	+'<strong><b>what is the name of above metamorphic rocks?</b></strong>'
+					 	+'<strong><b id="SelectOriginalName">what is the name of above igneous rock ?</b></strong>'
 					 	+'<br>'
 					 	+'<br>'
 					 	+'<select class="custom-select" id="originalName"  >'
@@ -146,40 +144,72 @@ function mineralSelect(){
 		 		
 			 }
 		
-			$('#originalName').change(function(){
-					originalName();
+			$('#originalName').change(function()
+			{
+				attemptCount++;
+								
+					var temp=0
+					temp=4-attemptCount;
+								if(temp>1&& temp<4)
+									{										
+										$("#helpTip").html("Select correct name, You have only "+temp+" attempt !!!");
+										$("#helpTip").addClass("blink");
+										originalName();
+									}
+									else if(temp==1)
+									{
+										
+										$("#helpTip").html("this Is your last attempt !!!");
+										$("#helpTip").addClass("blink");
+										originalName();
+									}
+									else if(temp==0)
+									{
+										$("#helpTip").html("Name of selected rock is - "+tempMasterJson.demo[copyMineralid].originalName);
+										$("#helpTip").addClass("blink");
+									
+										originalName();
+									}
+									else if(temp<0)
+									{
+										originalName();
+									}
+						 	    	//$("#error").html(str1);
+						 	
+				
+				
 			});
 		}
 		
 		function previewPanel(){
 				
 						if("src1" in tempMasterJson.demo[copyMineralid] ){
-						text+='<div class="col-lg-2" id="previewPanel1" >'
-							+'<img id="preview1"  class="previewImg" src="'+tempMasterJson.demo[copyMineralid].src1+'" width="90" height="90" ><br>'
+						text+='<div class="col-lg-2 " id="previewPanel1" >'
+							+'<center><img id="preview1"  class=" img-fluid previewImg" src="'+tempMasterJson.demo[copyMineralid].src1+'" width="90" height="90" ></center>'
 							+'</div>'
 							$("#previewPanel").append(text);
 						}
 						if("src2" in tempMasterJson.demo[copyMineralid]){
-							text+='<div class="col-lg-2" id="previewPanel2" >'
-							+'<img id="preview2"  class="previewImg" src="'+tempMasterJson.demo[copyMineralid].src2+'" width="90" height="90" ><br>'
+							text+='<div class="col-lg-2 " id="previewPanel2" >'
+							+'<center><img id="preview2"  class=" img-fluid previewImg"  style="background-repeat: no-repeat;" src="'+tempMasterJson.demo[copyMineralid].src2+'" width="90" height="90" ></center>'
 							+'</div>'
 							$("#previewPanel").append(text);
 						}
 						if("src3" in tempMasterJson.demo[copyMineralid]){
-							text+='<div class="col-lg-2" id="previewPanel3" >'
-							+'<img id="preview3"  class="previewImg" src="'+tempMasterJson.demo[copyMineralid].src3+'" width="90" height="90" ><br>'
+							text+='<div class="col-lg-2 " id="previewPanel3" >'
+							+'<center><img id="preview3"  class="img-fluid previewImg"  style="background-repeat: no-repeat;"  src="'+tempMasterJson.demo[copyMineralid].src3+'" width="90" height="90" ></center>'
 							+'</div>'
 							$("#previewPanel").append(text);
 						}
 						if("src4" in tempMasterJson.demo[copyMineralid]){
-							text+='<div class="col-lg-2" id="previewPanel4" >'
-							+'<img id="preview4"  class="previewImg" src="'+tempMasterJson.demo[copyMineralid].src4+'" width="90" height="90" ><br>'
+							text+='<div class="col-lg-2  " id="previewPanel4" >'
+							+'<center><img id="preview4"  class="img-fluid previewImg" style="background-repeat: no-repeat;"  src="'+tempMasterJson.demo[copyMineralid].src4+'" width="90" height="90" ></center>'
 							+'</div>'
 							$("#previewPanel").append(text);
 						}
 						if("src" in tempMasterJson.demo[copyMineralid] ){
-							text+='<div class="col-lg-2" id="previewPanel5" >'
-								+'<img id="preview5"  class="previewImg" src="'+tempMasterJson.demo[copyMineralid].src+'" width="90" height="90" ><br>'
+							text+='<div class="col-lg-2 " id="previewPanel5" >'
+								+'<center><img id="preview5"  class="img-fluid previewImg" style="background-repeat: no-repeat;" src="'+tempMasterJson.demo[copyMineralid].src+'" width="90" height="90" ></center>'
 								+'</div>'
 								$("#previewPanel").append(text);
 							}
@@ -219,6 +249,7 @@ function mineralSelect(){
 					var mineral=$('#mineral :selected').val();
 					var originalName=$('#originalName :selected').val();
 						 	if(mineral==originalName){
+								$("#helpTip").hide();
 						 		$('#info_div').html("");
 
 						 		var text='<div class="container col-lg-5  col-sm-12" >'
@@ -253,10 +284,9 @@ function mineralSelect(){
 						 				+'<div class="container col-lg-12 col-sm-12" style=" height: 700px; overflow-y: scroll;margin:10px;">'
 			 			        var option=[];	
 						 		var questionLength=tempMasterJson.demo[copyMineralid].question.length;
-//						 		console.log("copyMineralid "+copyMineralid+" questionLength  "+questionLength);
 						 		
 						 	for(var j=0;j<questionLength;j++){
-//						 		console.log("question "+tempMasterJson.demo[copyMineralid].question[j].question);
+
 				 				text+='<br><button type="button" class="btn btnStyle" id="questionNumBtn"  style="cursor: default;"><b>Question No - '+(j+1)+'</b></button><br>'
 					 				+'<br><caption> <h5><b>'+tempMasterJson.demo[copyMineralid].question[j].question+'</b></h5></caption><br>'
 					 				+'<b><div class="row">'
@@ -291,13 +321,7 @@ function mineralSelect(){
 								
 						 	}
 						
-						 	else
-						 		{
-						 	    var str1='<div class="alert alert-success">'
-						 	    	+'<strong>Select correct original name of metamorphic rocks name.  </strong>'
-			 			  	+'</div>'
-						 	    	$("#error").html(str1);
-						 	}
+						 
 						 	
 						} 
 			$("#smt").click(function(){
@@ -360,11 +384,8 @@ function smtQuestion(){
 		AddResult='<p class="properties"></p>'
 				  +'<p class="properties"><b>Chemical classification :</b> '+tempMasterJson.demo[copyMineralid].chemical_Classification+'</p>'
 				  +'<p class="properties"><b>Colour :</b> '+tempMasterJson.demo[copyMineralid].colour+'</p>'
-				  +'<p class="properties"><b>Streak :</b> '+tempMasterJson.demo[copyMineralid].streak+'</p>'
-				  +'<p class="properties"><b>Luster :</b> '+tempMasterJson.demo[copyMineralid].luster+'</p>'
-				  +'<p class="properties"><b>Mohs hardness :</b> '+tempMasterJson.demo[copyMineralid].mohs_Hardness+'</p>'
 				  +'<p class="properties"><b>Cleavage :</b> '+tempMasterJson.demo[copyMineralid].cleavage+'</p>'
-				  +'<p class="properties"><b>Diaphaneity :</b> '+tempMasterJson.demo[copyMineralid].diaphaneity+'</p>'
+			//	  +'<p class="properties"><b>Diaphaneity :</b> '+tempMasterJson.demo[copyMineralid].diaphaneity+'</p>'
 				  +'<p class="properties"><b>Gravity :</b> '+tempMasterJson.demo[copyMineralid].gravity+'</p>'
 				  +'<p class="properties"><b>Chemical composition :</b> '+tempMasterJson.demo[copyMineralid].chemical_Composition+'</p>'
 				  +'<p class="properties"><b>Special properties :</b> '+tempMasterJson.demo[copyMineralid].specialProperties+'</p>'
@@ -403,7 +424,7 @@ function smtQuestion(){
 
 function resultModal(){
 	var modelAnswerPanel='<!-- Model for answer panel -->'
-		+' <div class="modal fade modal" id="myModal">'
+		+' <div class="modal fade" id="myModal">'
 		+' <div class="modal-dialog">'
 		+' <div class="modal-content">'
       
