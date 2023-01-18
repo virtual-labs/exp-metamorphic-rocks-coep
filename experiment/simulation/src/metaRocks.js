@@ -2,7 +2,7 @@ var i=1;
 var maxIndexArr=5;
 var mineralCount=1;
 let  SampleRandomArr = [];
-var attemptCount=0;
+
 function randomIntFromInterval(){ 
 	do {
 	  	let num = Math.floor(Math.random() * 26 + 1);
@@ -94,15 +94,19 @@ $(document).ready(function() {
 		 mineralSelect();
 	 });
 }); 
-
+var temp=0;
+var attemptCount=0;
 function mineralSelect(){
-		$("#helpTip").html("");
-		$("#helpTip").removeClass("blink");
+	attemptCount=0;
+		$("#helpTip").show();
+		$('#info_div').html(""); 
 		$('#myresult').show();
 		$('#myimage').show();
 		$('#originalName').show();
+		$("#helpTip").html("Select correct name from selection box ");
+		 $("#helpTip").addClass("blink");
 		tempMasterJson.demo = masterJsonArr;
-		$('#info_div').html(""); 
+		
 		var tempmineral=$('#mineral :selected').val();
 		
 	 var mineral=parseInt(tempmineral);
@@ -147,8 +151,6 @@ function mineralSelect(){
 			$('#originalName').change(function()
 			{
 				attemptCount++;
-								
-					var temp=0
 					temp=4-attemptCount;
 								if(temp>1&& temp<4)
 									{										
@@ -245,6 +247,7 @@ function mineralSelect(){
 		
 		function originalName(){
 			$("#mineral").attr("disabled", true);
+			
 			for(i=0;i<tempMasterJson.demo.length;i++){
 					var mineral=$('#mineral :selected').val();
 					var originalName=$('#originalName :selected').val();
@@ -364,7 +367,7 @@ function smtQuestion(){
 	
 	if(notSelected==questionLength){
 		$("#helpTip").html("");
-		$("#helpTip").removeClass("blink");	
+		// $("#helpTip").removeClass("blink");	
 		$('#mineral :selected').attr('disabled', false);
 		resultModal();
 		$("#modalHeading").html("Alert");
