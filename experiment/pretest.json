@@ -10,12 +10,7 @@
 				"c": "Pressure",
 				"d": "Chemically active fluids"
 			},
-			"explanations": {
-				"a": "Explanation : The factors affecting the metamorphism of the rocks are temperature, pressure and chemically fluids. Wind conditions do not affect the metamorphism in any way. ",
-				"b": "Explanation ",
-				"c": "Explanation ",
-				"d": "Explanation "
-			},
+			
 			"correctAnswer": "a",
 			"difficulty": "beginner"
 		},
@@ -27,12 +22,7 @@
 				"c": "Agents of changes",
 				"d": "Tertiary aspects"
 			},
-			"explanations": {
-				"a": "Explanation ",
-				"b": "Explanation :Metamorphic changes in the rocks are primarily the result of three main factors that are also sometimes called agents of metamorphism: heat, pressure and chemically active fluids.",
-				"c": "Explanation ",
-				"d": "Explanation "
-			},
+			
 			"correctAnswer": "b",
 			"difficulty": "beginner"
 		},
@@ -44,12 +34,7 @@
 				"c": "500° C",
 				"d": "200° C"
 			},
-			"explanations": {
-				"a": "Explanation ",
-				"b": "Explanation ",
-				"c": "Explanation ",
-				"d": "Explanation :Rocks are made up of minerals that are normally stable at temperature below 200° C. However when the temperature around these rocks changes due to one reason or the other, the mineral composition of the rocks undergoes some changes "
-			},
+			
 			"correctAnswer": "d",
 			"difficulty": "beginner"
 		},
@@ -61,12 +46,7 @@
 				"c": "Secondary pressure",
 				"d": "Primary pressure"
 			},
-			"explanations": {
-				"a": "Explanation ",
-				"b": "Explanation :The pressure from orogenic activity is generally lateral or horizontal and is commonly termed as directed pressure.",
-				"c": "Explanation ",
-				"d": "Explanation "
-			},
+			
 			"correctAnswer": "b",
 			"difficulty": "beginner"
 		},
@@ -78,12 +58,7 @@
 				"c": "Inclined",
 				"d": "Horizontal or inclined"
 			},
-			"explanations": {
-				"a": "Explanation :The load of the overlying burden acts generally exerts pressure in a vertical direction and the process of change in the structure of the rock is often referred as load metamorphism.",
-				"b": "Explanation :",
-				"c": "Explanation ",
-				"d": "Explanation "
-			},
+			
 			"correctAnswer": "a",
 			"difficulty": "beginner"
 		},
@@ -95,12 +70,7 @@
 				"c": "Plutonic metamorphism",
 				"d": "Dyke metamorphism"
 			},
-			"explanations": {
-				"a": "Explanation :Contact metamorphism is a common type of thermal observed in rocks existing close to the magmatic intrusions, injections and lava flows.",
-				"b": "Explanation ",
-				"c": "Explanation ",
-				"d": "Explanation "
-			},
+			
 			"correctAnswer": "a",
 			"difficulty": "beginner"
 		}
