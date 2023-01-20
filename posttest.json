@@ -1,0 +1,78 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Any given rock at some depth below the surface is subjected to pressure from how many sources?",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	 {
+      "question": "Water in which form is considered as single most important agent?",
+      "answers": {
+        "a": "Solid",
+        "b": "Liquid",
+        "c": "Gaseous",
+        "d": "Solid and liquid"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Which rocks show severe degree of metamorphism?",
+      "answers": {
+        "a": "Situated near the plate boundaries",
+        "b": "Situated inside the boundaries",
+        "c": "Situated at the centre of the plates",
+        "d": "Irrespective of the place, the degree is same everywhere"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "The type of metamorphism in which heat factor has played an important role is",
+      "answers": {
+        "a": "Dynamic metamorphism",
+        "b": "Thermal metamorphism",
+        "c": "Thermodynamic metamorphism",
+        "d": "Barometric metamorphism"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Type of metamorphism where part of country rock may get entrapped within magmatic body is ",
+      "answers": {
+        "a": "Contact metamorphism",
+        "b": "Pyrometamorphism",
+        "c": "Plutonic metamorphism",
+        "d": "Dyke metamorphism"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "In which metamorphism there is almost no or little new mineral is formed?",
+      "answers": {
+        "a": "Dynamic metamorphism",
+        "b": "Thermal metamorphism",
+        "c": "Thermodynamic metamorphism",
+        "d": "Barometric metamorphism"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+    
+  ]
+}
